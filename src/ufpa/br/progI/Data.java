@@ -15,9 +15,9 @@ public class Data
 	
 	public Data()
 	{
-		setDia(1);
-		setMes(1);
-		setAno(1990);
+		setDia(17);
+		setMes(12);
+		setAno(2013);
 	}
 	
 	public int getDia(){return dia;}

@@ -2,9 +2,9 @@ package ufpa.br.progI;
 
 public abstract class BancoDados 
 {
-	private String nomeBanco;
-	private String tipoBanco;
-	private Data dataCriacao;
+	protected String nomeBanco;
+	protected String tipoBanco;
+	protected Data dataCriacao;
 	protected static int qtadeProjetos = 0;
 	
 	public static void verificarProjetos()
