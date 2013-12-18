@@ -41,4 +41,9 @@ public class Data
 		if (ano >= 1990 && ano <= 2013)
 			this.ano = ano;
 	}
+	
+	public void imprimeData()
+	{
+		System.out.println(dia+"/"+mes+"/"+ano);
+	}
 }
