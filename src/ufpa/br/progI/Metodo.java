@@ -16,6 +16,14 @@ public class Metodo
 		setTipoRetorno(tipoRetorno);
 	}
 	
+	public void imprimeMetodo()
+	{
+		System.out.println("Nome do Método: "+nomeMetodo);
+		System.out.println("Argumentos de entrada: "+argumentosEntrada);
+		System.out.println("Descricao do método: "+descricaoMetodo);
+		System.out.println("Tipo de retorno: "+tipoRetorno);
+	}
+	
 	public void setNomeMetodo(String nomeMetodo)
 	{
 		this.nomeMetodo = nomeMetodo;
