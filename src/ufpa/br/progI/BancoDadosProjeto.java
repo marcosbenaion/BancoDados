@@ -42,9 +42,4 @@ public class BancoDadosProjeto extends BancoDados implements Informavel
 		bancoDadosClasses = "Nenhuma classe associada";
 		administrador = "Nenhum selecionado";
 	}
-	
-	public String getNomeProjeto()
-	{
-		return nomeProjeto;
-	}
 }

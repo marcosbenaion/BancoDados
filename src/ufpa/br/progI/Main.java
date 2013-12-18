@@ -7,7 +7,8 @@ public class Main {
 		//verificando a quantidade de projetos adicionados
 		BancoDados.verificarProjetos();
 		//criando um Banco de Dados de um Projeto
-		BancoDadosProjeto ProjetoPicareta = new BancoDadosProjeto("BD de ProjetoPicareta","ProjetoPicareta","Marcos",18,12,2013);
+		BancoDadosProjeto ProjetoPicareta = new BancoDadosProjeto("BD de ProjetoPicareta",
+				"ProjetoPicareta","Marcos",18,12,2013);
 		ProjetoPicareta.imprimirBancoDados();
 		System.out.println();
 		//criando classe Item (Banco de Dados da Classe Item)
@@ -37,7 +38,7 @@ public class Main {
 		PicaretaAtributos.imprimirBancoDados();
 		System.out.println();
 		// se quiser acessar um atributo
-		resistenciaMax.imprimeAtributo();
+		PicaretaAtributos.listarAtributo(resistenciaMax);
 		System.out.println();
 		//criando Banco de dados de Metodos de Picareta
 		BancoDadosMetodos PicaretaMetodos = new BancoDadosMetodos("BD de Metodos de Picareta","Picareta",18,12,2013);
@@ -58,7 +59,7 @@ public class Main {
 		PicaretaMetodos.imprimirBancoDados();
 		System.out.println();
 		// mostrando um metodo
-		mostrarPreco.imprimeMetodo();
+		PicaretaMetodos.listarMetodo(reparar);
 		System.out.println();
 		// Associando os Bancos de Dados de atributos e metodos com a classe
 		Picareta.entradaDados("PicaretaAtributos", "PicaretaMetodos");
@@ -95,12 +96,12 @@ public class Main {
 		PicaretaAtributos.imprimirBancoDados();
 		   // imprimindo um atributo
 		   System.out.println();
-		   resistenciaMax.imprimeAtributo();
+		   PicaretaAtributos.listarAtributo(eficiencia);
 		   System.out.println();
 		PicaretaMetodos.imprimirBancoDados();
 		   // imprimindo um metodo
 		   System.out.println();
-		   mostrarPreco.imprimeMetodo();
+		   PicaretaMetodos.listarMetodo(mostrarPreco);
 		   System.out.println();
 		PicaretaFerro.imprimirBancoDados();
 		System.out.println();

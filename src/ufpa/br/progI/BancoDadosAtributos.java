@@ -41,7 +41,6 @@ public class BancoDadosAtributos extends BancoDados implements Informavel
 		vetorAtributos.add(objeto);
 	}
 
-
 	@Override
 	public void imprimirBancoDados() {
 		// TODO Auto-generated method stub
