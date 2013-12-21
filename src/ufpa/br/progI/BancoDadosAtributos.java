@@ -15,6 +15,7 @@ public class BancoDadosAtributos extends BancoDados implements Informavel
 		Data dataCriacao = new Data(17,12,2013);
 		listaAtributos = "Nenhum atributo";
 		classeRelacionada = "Nenhuma";
+		qtadeBancoDadosAtributos=qtadeBancoDadosAtributos+1;
 	}
 	
 	public BancoDadosAtributos(String nomeBanco,String classeRelacionada,int dia,int mes, int ano)
@@ -47,5 +48,11 @@ public class BancoDadosAtributos extends BancoDados implements Informavel
 		System.out.println("Nome do Banco: "+nomeBanco);
 		System.out.println("Tipo do Banco: "+tipoBanco);
 		System.out.println("Lista de atributos: "+listaAtributos);
+	}
+
+	@Override
+	public void exibitQtadeBancoDados() {
+		// TODO Auto-generated method stub
+		System.out.println("Existem "+qtadeBancoDadosAtributos+" Bancos de dados de atributos.");
 	}
 }

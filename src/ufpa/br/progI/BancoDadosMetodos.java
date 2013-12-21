@@ -14,6 +14,7 @@ public class BancoDadosMetodos extends BancoDados implements Informavel
 		tipoBanco = "Banco de Dados de metodos";
 		Data dataCriacao = new Data(17,12,2013);
 		listaMetodos = "Nenhum método";
+		qtadeBancoDadosMetodos=qtadeBancoDadosMetodos+1;
 	}
 	
 	public BancoDadosMetodos(String nomeBanco,String classeAssociada,int dia,int mes, int ano)
@@ -46,5 +47,11 @@ public class BancoDadosMetodos extends BancoDados implements Informavel
 		System.out.println("Nome do Banco: "+nomeBanco);
 		System.out.println("Tipo do Banco: "+tipoBanco);
 		System.out.println("Lista de Metodos: "+listaMetodos);
+	}
+
+	@Override
+	public void exibitQtadeBancoDados() {
+		// TODO Auto-generated method stub
+		System.out.println("Existem "+qtadeBancoDadosMetodos+" Bancos de dados de Métodos.");
 	}
 }

@@ -16,6 +16,7 @@ public class BancoDadosClasse extends BancoDados implements Informavel
 		setDescricaoClasse("Descricao da classe (aqui)");
 		setProjetoRelacionado("Nenhum");
 		Data dataCriacao = new Data(17,12,2013);
+		qtadeBancoDadosClasses= qtadeBancoDadosClasses+1;
 	}
 	
 	public BancoDadosClasse(String nomeBanco,String nomeClasse,String descricao
@@ -61,5 +62,11 @@ public class BancoDadosClasse extends BancoDados implements Informavel
 	public void setProjetoRelacionado(String projetoRelacionado)
 	{
 		this.projetoRelacionado = projetoRelacionado;
+	}
+
+	@Override
+	public void exibitQtadeBancoDados() {
+		// TODO Auto-generated method stub
+		System.out.println("Existem "+qtadeBancoDadosClasses+" Bancos de dados de classe.");
 	}
 }

@@ -21,7 +21,8 @@ public class BancoDadosProjeto extends BancoDados implements Informavel
 		bancoDadosClasses = valor;
 	}
 	
-	public BancoDadosProjeto(String nomeBanco,String nomeProjeto,String administrador,int dia,int mes,int ano)
+	public BancoDadosProjeto(String nomeBanco,String nomeProjeto,String administrador,int dia,
+			int mes,int ano)
 	{
 		this.nomeBanco = nomeBanco;
 		tipoBanco = "Banco de Dados de Projeto";
@@ -41,5 +42,11 @@ public class BancoDadosProjeto extends BancoDados implements Informavel
 		qtadeProjetos = qtadeProjetos+1;
 		bancoDadosClasses = "Nenhuma classe associada";
 		administrador = "Nenhum selecionado";
+	}
+
+	@Override
+	public void exibitQtadeBancoDados() {
+		// TODO Auto-generated method stub
+		System.out.println("Existem "+qtadeProjetos+" Bancos de dados de projetos.");
 	}
 }

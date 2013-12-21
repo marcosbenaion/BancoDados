@@ -13,6 +13,13 @@ public class Atributo
 		setTipoAtributo(tipoAtributo);
 	}
 	
+	public void imprimeAtributo()
+	{
+		System.out.println("Nome do atributo: "+nomeAtributo);
+		System.out.println("Descricao do atributo: "+descricaoAtributo);
+		System.out.println("Tipo do atributo: "+tipoAtributo);
+	}
+	
 	public void setNomeAtributo(String nomeAtributo)
 	{
 		this.nomeAtributo = nomeAtributo;
@@ -43,10 +50,5 @@ public class Atributo
 		return tipoAtributo;
 	}
 	
-	public void imprimeAtributo()
-	{
-		System.out.println("Nome do atributo: "+nomeAtributo);
-		System.out.println("Descricao do atributo: "+descricaoAtributo);
-		System.out.println("Tipo do atributo: "+tipoAtributo);
-	}
+	
 }
